@@ -1,0 +1,13 @@
+Gate,Decision
+Main factorial experiment,PASS
+Corrected Global Lock,PASS
+Static Escrow baseline,PASS
+Dynamic Escrow fairness,PASS
+Integrated Reservation,PASS
+Partial-fill residual reservation,PASS
+Lost terminal report → timeout → reconciliation,PASS
+Fault-factor deconfounding,PASS
+Idempotency stress,PASS
+Paired bootstrap CI,PASS
+Service-cost sensitivity,PASS
+Reproducibility package,PASS

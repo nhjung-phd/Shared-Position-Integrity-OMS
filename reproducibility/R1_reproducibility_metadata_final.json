@@ -1,0 +1,70 @@
+{
+  "study": "R1 Shared Position Integrity",
+  "version": "LifecycleComplete_v2",
+  "base_seed": 20261025,
+  "main_experiment": {
+    "oms_counts": [
+      2,
+      4,
+      8
+    ],
+    "propagation_delays": [
+      0,
+      2,
+      5,
+      10
+    ],
+    "loads": [
+      0.6,
+      1.0,
+      1.6
+    ],
+    "replications": 80,
+    "policies": [
+      "P0",
+      "P1C",
+      "P2S",
+      "P2D",
+      "P3"
+    ],
+    "orders_per_episode": 180,
+    "total_policy_episodes": 14400
+  },
+  "fixed_lifecycle_parameters": {
+    "partial_fill_probability": 0.25,
+    "cancel_probability": 0.12,
+    "ack_loss_probability": 0.03,
+    "timeout": 6.0
+  },
+  "robustness_factors": {
+    "duplicate_probability": [
+      0.0,
+      0.03,
+      0.07,
+      0.12
+    ],
+    "terminal_report_loss_probability": [
+      0.0,
+      0.03,
+      0.07,
+      0.12
+    ],
+    "out_of_order_probability": [
+      0.0,
+      0.03,
+      0.07,
+      0.12
+    ]
+  },
+  "dynamic_escrow": {
+    "buffer": 5.0,
+    "transfer_cost": 0.05
+  },
+  "invariants": [
+    "capacity: executed + reserved <= B",
+    "idempotency",
+    "authoritative release",
+    "partial fill leaves residual reservation"
+  ],
+  "latency_note": "Normalized service-cost only; not production milliseconds."
+}

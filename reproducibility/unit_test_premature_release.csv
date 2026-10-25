@@ -1,0 +1,6 @@
+event,executed,reserved,LGFG
+O1 admitted,0,70,0
+WRONG early ACK release,0,0,0
+O2 admitted,0,60,0
+O1 executes,70,60,30
+O2 executes,130,0,30

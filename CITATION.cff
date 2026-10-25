@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated study."
+title: "Shared Position Integrity under Asynchronous State Visibility"
+type: software
+authors:
+  - family-names: Jung
+    given-names: Nak Hyun
+version: "1.0"
+date-released: 2026-10-25
+repository-code: "https://github.com/nhjung-phd/Shared-Position-Integrity-OMS"
+license: MIT

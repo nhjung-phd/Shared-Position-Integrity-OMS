@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/
+
+# Temporary / local outputs
+*.tmp
+*.log
+
+# Keep canonical research outputs under results/, figures/, reproducibility/

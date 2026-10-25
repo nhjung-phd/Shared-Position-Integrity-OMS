@@ -1,0 +1,4 @@
+event,executed,reserved,LGFG
+admit 100,0,100,0
+partial fill 40,40,60,0
+cancel residual 60,40,0,0
